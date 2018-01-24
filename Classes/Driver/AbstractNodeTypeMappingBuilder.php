@@ -37,7 +37,7 @@ abstract class AbstractNodeTypeMappingBuilder implements NodeTypeMappingBuilderI
     protected $nodeTypeManager;
 
     /**
-     * @var \Neos\Flow\Error\Result
+     * @var \Neos\Error\Messages\Result
      */
     protected $lastMappingErrors;
 
@@ -72,7 +72,7 @@ abstract class AbstractNodeTypeMappingBuilder implements NodeTypeMappingBuilderI
     }
 
     /**
-     * @return \Neos\Flow\Error\Result
+     * @return \Neos\Error\Messages\Result
      */
     public function getLastMappingErrors()
     {

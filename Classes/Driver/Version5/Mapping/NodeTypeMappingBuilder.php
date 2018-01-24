@@ -16,8 +16,8 @@ use Flowpack\ElasticSearch\Domain\Model\Index;
 use Flowpack\ElasticSearch\Domain\Model\Mapping;
 use Flowpack\ElasticSearch\Mapping\MappingCollection;
 use Neos\Flow\Annotations as Flow;
-use Neos\Flow\Error\Result;
-use Neos\Flow\Error\Warning;
+use Neos\Error\Messages\Result;
+use Neos\Error\Messages\Warning;
 use Neos\Flow\ObjectManagement\ObjectManagerInterface;
 use TYPO3\TYPO3CR\Domain\Model\NodeType;
 
