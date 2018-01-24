@@ -12,7 +12,7 @@ namespace Flowpack\ElasticSearch\ContentRepositoryAdaptor\Driver\Version5;
  */
 
 use Flowpack\ElasticSearch\ContentRepositoryAdaptor\Driver\Version1;
-use TYPO3\Flow\Annotations as Flow;
+use Neos\Flow\Annotations as Flow;
 
 /**
  * Index management driver for Elasticsearch version 5.x

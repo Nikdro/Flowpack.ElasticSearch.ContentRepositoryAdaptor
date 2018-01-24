@@ -15,9 +15,9 @@ use Flowpack\ElasticSearch\ContentRepositoryAdaptor\Driver\AbstractNodeTypeMappi
 use Flowpack\ElasticSearch\Domain\Model\Index;
 use Flowpack\ElasticSearch\Domain\Model\Mapping;
 use Flowpack\ElasticSearch\Mapping\MappingCollection;
-use TYPO3\Flow\Annotations as Flow;
-use TYPO3\Flow\Error\Result;
-use TYPO3\Flow\Error\Warning;
+use Neos\Flow\Annotations as Flow;
+use Neos\Flow\Error\Result;
+use Neos\Flow\Error\Warning;
 use TYPO3\TYPO3CR\Domain\Model\NodeType;
 
 /**

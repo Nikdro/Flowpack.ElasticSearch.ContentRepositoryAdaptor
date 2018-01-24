@@ -11,9 +11,9 @@ namespace Flowpack\ElasticSearch\ContentRepositoryAdaptor\Driver;
  * source code.
  */
 
-use TYPO3\Flow\Annotations as Flow;
-use TYPO3\Flow\Configuration\ConfigurationManager;
-use TYPO3\Flow\ObjectManagement\ObjectManagerInterface;
+use Neos\Flow\Annotations as Flow;
+use Neos\Flow\Configuration\ConfigurationManager;
+use Neos\Flow\ObjectManagement\ObjectManagerInterface;
 use TYPO3\TYPO3CR\Domain\Service\NodeTypeManager;
 
 /**
@@ -37,7 +37,7 @@ abstract class AbstractNodeTypeMappingBuilder implements NodeTypeMappingBuilderI
     protected $nodeTypeManager;
 
     /**
-     * @var \TYPO3\Flow\Error\Result
+     * @var \Neos\Flow\Error\Result
      */
     protected $lastMappingErrors;
 
@@ -72,7 +72,7 @@ abstract class AbstractNodeTypeMappingBuilder implements NodeTypeMappingBuilderI
     }
 
     /**
-     * @return \TYPO3\Flow\Error\Result
+     * @return \Neos\Flow\Error\Result
      */
     public function getLastMappingErrors()
     {

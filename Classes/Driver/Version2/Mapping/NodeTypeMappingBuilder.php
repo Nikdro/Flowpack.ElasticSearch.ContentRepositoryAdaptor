@@ -11,7 +11,7 @@ namespace Flowpack\ElasticSearch\ContentRepositoryAdaptor\Driver\Version2\Mappin
  * source code.
  */
 
-use TYPO3\Flow\Annotations as Flow;
+use Neos\Flow\Annotations as Flow;
 use Flowpack\ElasticSearch\ContentRepositoryAdaptor\Driver\Version1;
 
 /**
