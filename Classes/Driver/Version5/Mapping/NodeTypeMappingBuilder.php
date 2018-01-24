@@ -18,7 +18,7 @@ use Flowpack\ElasticSearch\Mapping\MappingCollection;
 use TYPO3\Flow\Annotations as Flow;
 use TYPO3\Flow\Error\Result;
 use TYPO3\Flow\Error\Warning;
-use TYPO3\Flow\Object\ObjectManagerInterface;
+use TYPO3\Flow\ObjectManagement\ObjectManagerInterface;
 use TYPO3\TYPO3CR\Domain\Model\NodeType;
 
 /**
