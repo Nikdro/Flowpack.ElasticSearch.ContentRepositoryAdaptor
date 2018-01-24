@@ -18,7 +18,7 @@ use Flowpack\ElasticSearch\Mapping\MappingCollection;
 use Neos\Flow\Annotations as Flow;
 use Neos\Error\Messages\Result;
 use Neos\Error\Messages\Warning;
-use TYPO3\TYPO3CR\Domain\Model\NodeType;
+use Neos\ContentRepository\Domain\Model\NodeType;
 
 /**
  * NodeTypeMappingBuilder for Elasticsearch version 1.x

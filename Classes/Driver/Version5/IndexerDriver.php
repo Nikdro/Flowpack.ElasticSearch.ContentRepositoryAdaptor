@@ -15,7 +15,7 @@ use Flowpack\ElasticSearch\ContentRepositoryAdaptor\Driver\AbstractNodeTypeMappi
 use Flowpack\ElasticSearch\ContentRepositoryAdaptor\Driver\Version2;
 use Flowpack\ElasticSearch\Domain\Model\Document as ElasticSearchDocument;
 use Neos\Flow\Annotations as Flow;
-use TYPO3\TYPO3CR\Domain\Model\NodeInterface;
+use Neos\ContentRepository\Domain\Model\NodeInterface;
 
 /**
  * Indexer driver for Elasticsearch version 5.x

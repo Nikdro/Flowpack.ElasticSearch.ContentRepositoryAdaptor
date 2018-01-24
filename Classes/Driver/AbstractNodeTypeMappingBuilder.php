@@ -14,7 +14,7 @@ namespace Flowpack\ElasticSearch\ContentRepositoryAdaptor\Driver;
 use Neos\Flow\Annotations as Flow;
 use Neos\Flow\Configuration\ConfigurationManager;
 use Neos\Flow\ObjectManagement\ObjectManagerInterface;
-use TYPO3\TYPO3CR\Domain\Service\NodeTypeManager;
+use Neos\ContentRepository\Domain\Service\NodeTypeManager;
 
 /**
  * Builds the mapping information for Content Repository Node Types in Elasticsearch
@@ -55,7 +55,7 @@ abstract class AbstractNodeTypeMappingBuilder implements NodeTypeMappingBuilderI
     public function initializeObject($cause)
     {
         if ($cause === ObjectManagerInterface::INITIALIZATIONCAUSE_CREATED) {
-            $settings = $this->configurationManager->getConfiguration(ConfigurationManager::CONFIGURATION_TYPE_SETTINGS, 'TYPO3.TYPO3CR.Search');
+            $settings = $this->configurationManager->getConfiguration(ConfigurationManager::CONFIGURATION_TYPE_SETTINGS, 'Neos.ContentRepository.Search');
             $this->defaultConfigurationPerType = $settings['defaultConfigurationPerType'];
         }
     }

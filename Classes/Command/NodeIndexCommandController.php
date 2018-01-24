@@ -22,11 +22,11 @@ use Neos\Flow\Cli\CommandController;
 use Neos\Flow\Configuration\ConfigurationManager;
 use Neos\Flow\ObjectManagement\ObjectManagerInterface;
 use Neos\Neos\Controller\CreateContentContextTrait;
-use TYPO3\TYPO3CR\Domain\Model\Workspace;
-use TYPO3\TYPO3CR\Domain\Repository\NodeDataRepository;
-use TYPO3\TYPO3CR\Domain\Repository\WorkspaceRepository;
-use TYPO3\TYPO3CR\Domain\Service\ContentDimensionPresetSourceInterface;
-use TYPO3\TYPO3CR\Search\Indexer\NodeIndexerInterface;
+use Neos\ContentRepository\Domain\Model\Workspace;
+use Neos\ContentRepository\Domain\Repository\NodeDataRepository;
+use Neos\ContentRepository\Domain\Repository\WorkspaceRepository;
+use Neos\ContentRepository\Domain\Service\ContentDimensionPresetSourceInterface;
+use Neos\ContentRepository\Search\Indexer\NodeIndexerInterface;
 
 /**
  * Provides CLI features for index handling
@@ -58,7 +58,7 @@ class NodeIndexCommandController extends CommandController
 
     /**
      * @Flow\Inject
-     * @var \TYPO3\TYPO3CR\Domain\Factory\NodeFactory
+     * @var \Neos\ContentRepository\Domain\Factory\NodeFactory
      */
     protected $nodeFactory;
 
@@ -99,7 +99,7 @@ class NodeIndexCommandController extends CommandController
     public function initializeObject($cause)
     {
         if ($cause === ObjectManagerInterface::INITIALIZATIONCAUSE_CREATED) {
-            $this->settings = $this->configurationManager->getConfiguration(ConfigurationManager::CONFIGURATION_TYPE_SETTINGS, 'TYPO3.TYPO3CR.Search');
+            $this->settings = $this->configurationManager->getConfiguration(ConfigurationManager::CONFIGURATION_TYPE_SETTINGS, 'Neos.ContentRepository.Search');
         }
     }
 
